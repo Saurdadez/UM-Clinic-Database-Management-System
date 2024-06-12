@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.border{
+    border: 1px solid red;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;   
+    background-image: linear-gradient( 179deg,  rgba(0,0,0,0.1) 9.2%, rgba(127,16,16,0.3) 103.9% ), url(../imgs/University-Of-Mindanao.png);
+    background-size: cover;
+    
+    
+    background-attachment: fixed;
+}
+
+.main:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+  }
+
+.main{
+    width: 30%;
+    height: 70%;
+    display: block;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    background-color: white;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+
+}
+.logo{
+    display:flex;
+    flex-wrap: wrap;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo h1{
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: maroon;
+}
+.logo p{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.content{
+    display: block;
+    display: block;
+    height: 80%;
+    width: 100%;
+}
+
+#field{
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  margin-top: 10px;
+}
+.content h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+}
+.icon {
+    padding: 15px;
+    background:maroon;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+
+#view{
+  position: absolute;
+  top: 28%;
+  right: 4%;
+  cursor: pointer;
+  color: gray;
+}
+
+input{
+    background-color: #F4F4F4;
+    border: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+
+    padding: 10px;
+    width: 100%;
+    height: 45px;
+    line-height: 30px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    background-color: #EAEAEA;
+  }
+  
+  input:disabled {
+    background-color: #DADADA;
+    color: #A3A3A3;
+  }
+  
+  input:read-only {
+    background-color: #F4F4F4;
+    color: #A3A3A3;
+    cursor: not-allowed;
+  }
+  button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: maroon;
+    margin-top: 50px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+    transition: .3s;
+  }
+  
+  button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+    cursor: pointer;
+  }
+  
